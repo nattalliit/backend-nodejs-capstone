@@ -3,6 +3,8 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const pinoLogger = require('./logger');
+//Import secondChanceItemsRoutes
+const secondChanceItemsRoutes = require('./routes/secondChanceItemsRoutes');
 
 const connectToDatabase = require('./models/db');
 const {loadData} = require("./util/import-mongo/index");
@@ -20,6 +22,8 @@ connectToDatabase().then(() => {
 
 
 app.use(express.json());
+//Import secondChanceItemsRoutes
+app.use('/api/secondchance/items', secondChanceItemsRoutes);
 
 // Route files
 
