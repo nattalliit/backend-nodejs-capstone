@@ -48,4 +48,7 @@ Create thirteen user stories in your GitHub repository, one for each of the abov
   
 - Fourth Assignment: 
   - Containerize the services and applications.
-  - Deploy backend services.
+  - Deploy backend services:
+  <p align="center">
+  <img src="deployed_on_cloud.png" alt="deployed-on-cloud" width="460">
+</p>
